@@ -1,0 +1,27 @@
+set atm option on
+set atm vcc 1 option on
+set atm vcc 1 vpi 8
+set atm vcc 1 vci 35
+set atm vcc 1 encap ether-llc
+set bridge dsl vcc1 option on
+set dhcp option off
+set dmt type multi
+set dmt autoConfig off
+set dmt wiringMode auto
+set dns domain-name ""
+set dns primary-address 0.0.0.0
+set dns secondary-address 0.0.0.0
+set ip option on
+set ip ethernet A option on
+set ip ethernet A address 192.168.2.254
+set ip ethernet A broadcast 192.168.2.255
+set ip ethernet A netmask 255.255.255.0
+set ip ethernet A restrictions none
+set ip ethernet A rip-send v2
+set ip ethernet A rip-receive v2
+set ip dsl vcc1 option off
+set ip gateway option off
+set nat-default option off
+set servers telnet-tcp 23
+set system diagnostic-level high
+set system heartbeat option off
